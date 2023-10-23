@@ -1,0 +1,507 @@
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0}
+  :focus{
+    outline:0}
+  img{
+    border:none}
+  html,body{
+    height:100%;
+    -webkit-text-size-adjust:none}
+  body{
+    background:#212020;
+    font-family:Arial, Tahoma, sans-serif;
+    font-size:14px;
+    color:#fff;
+    min-width:320px}
+  ol,ul{
+    list-style:none}
+  .option::first-letter{
+      text-transform: capitalize; 
+  }
+  .fix{
+        text-transform: lowercase; 
+  }
+  .wrap{
+    position:relative}
+  .step{
+    text-align:center;
+    display:none;
+    max-width:480px;
+    margin:0 auto}
+  .step:first-child{
+    display:block}
+  .step-content{
+    padding:15px 7px}
+  .step-content p{
+    margin-bottom:10px}
+  .step-title{
+    /* background:#d63c34; */
+    padding:10px 0;
+    font-size:36px;
+    text-transform:uppercase;
+    font-weight:normal;
+    text-align:center;
+    color: #fc0a00;
+    }
+  .pic-box img{
+    width: 90%;
+    border-radius: 20px;
+     border: 5px solid #ffffff;
+    }
+  .attention{
+    padding:15px 0}
+  .attention p{
+    padding: 0 5px;
+    font-size:18px;
+    margin-bottom:10px;
+  }
+  .attention h5{
+    font-size:22px}
+  .btns-box{
+    padding:15px 0}
+  .btn,.btn-start{
+    background:#669c38;
+    display: inline-block;
+    width: 95%;
+    padding: 20px 0;
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    }
+  .btn:hover,.btn-start:hover{
+    background:#669c47}
+  .question h2{
+   
+    padding:7px 0;
+    font-size:24px;
+    text-transform:uppercase;
+    color:#000;
+    text-align:center}
+  .question .btn{
+    display:inline-block;
+    margin: 0 1%;
+    width:40%}
+  .options h2{
+    margin-bottom: 3px;
+    font-size:20px;
+    font-weight:normal}
+  .choose-options{
+    font-size:14px;
+    font-style:italic}
+  .option{
+    margin-bottom:5px;
+    padding:10px 20px;
+    font-size:22px;
+    color:#000;
+    font-weight:bold;
+    padding:10px 10px 10px 50px;
+    text-align:left;
+    cursor:pointer;
+    position:relative;
+    }
+  .option:after{
+    content:'';
+    background:url(option.png) no-repeat 0 0;
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:10px;
+    margin:auto;
+    border-radius:50%}
+  .option.selected:after{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 2px solid #fff;
+    background-position:0 -30px;
+  }
+  #email-submit .button a{
+    width: 75%;
+  }
+  .loading1{
+    display:table!important;
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0}
+  .loading1 > ul{
+    display:table-cell!important;
+    width:100%;
+    height:100%;
+    vertical-align:middle}
+  .loading1 > ul > li{
+    display:none}
+  .loading1 > ul > li.visible{
+    display:block}
+  .loading1 h5{
+    font-size:18x;
+    margin-bottom:10px;
+    font-weight:normal}
+  .final h2{
+    padding: 0 5px;
+    font-size:30px;
+    font-weight:normal;
+    margin-bottom:10px}
+  .final > ul > li{
+    margin-bottom:5px;
+   
+    padding:10px 20px;
+    text-align:left}
+  
+  
+  #mailing {
+    display:none;
+    margin-top:30px;
+    padding:20px;
+    width:100%;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto
+  }
+  
+  .email_under_title > p {
+    font-size: 20px;
+    color: black;
+  }
+  
+  
+    
+    .textbox-email {
+      width: 80%;
+      padding: 5px;
+      font-size: 18px;
+    }
+  @media only screen and (max-width: 480px) {
+    .step-title{
+    /* background:#d63c34; */
+    padding:10px 7px;
+    font-size:29px;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-align:center;
+    }
+    .final h2 {
+      font-size: 27px;
+    }
+    .option {
+      font-size: 18px;
+    }
+    .loading1 h5 {
+      padding: 0 5px;
+    }
+  }
+
+/* google registration css */
+
+.google_button {
+    position: relative;
+    height: 45px;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.abcRioButtonBlue {
+    width: 100% !important;
+}
+
+.abcRioButtonContents {
+    font-size: 18px !important;
+}
+
+.googOverlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+
+/* google registration css */
+
+/* loader css */
+
+.loader_container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.loader_holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+#msg_loader {
+    color: #fff;
+    text-align: center;
+}
+
+#msg_loader img{
+    padding-bottom: 10px;
+}
+
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.loader {
+    margin: 0px auto 20px;
+    font-size: 5px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1.1em solid #fff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* loader css */
+
+/* reg1 css */
+
+.reg1Centered {
+    width: calc(100% - 10px);
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 5px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 10px;
+
+}
+#btn_submit {
+    max-width:245px;
+    width: 100%;
+   text-align: center;
+    display:block;
+    margin: 35px auto 25px auto;
+    background: #d63c34;
+    display:block;
+   
+    padding: 15px 0;
+    font-size: 1.4em;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+        text-transform: uppercase;
+}
+
+#btn_submit:hover {
+  background: #f32e22;
+  cursor: pointer;
+}
+.emailText {
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+
+}
+
+.headline_top {
+
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0;
+
+}
+.list_box {
+    text-align: left;
+    max-width: 347px;
+    width: 100%;
+    display: block;
+    margin: 10px auto 15px auto;
+
+    line-height: 25px;
+    font-size: 17px;
+
+    list-style: none;
+  }
+  .list_box li {
+    display: inline-flex;
+    list-style: none;
+  }
+  .list_box li:before {
+    content: "✓";
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000;
+  }
+
+#reg_email {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 310px;
+    width: 95%;
+    font-size: 17px;
+
+}
+
+
+.orRegister {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+
+#termsPrivacy {
+    max-width: 420px;
+    width: 100%;
+    display: block;
+    margin: 10px auto 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+
+#pleaseAcceptTerms p {
+    font-weight: normal;
+    float: left;
+    width: calc(100% - 25px);
+    text-align: left;
+    margin: 0 auto;
+    font-size: 13px;
+
+}
+
+#pleaseAcceptTerms p:nth-child(2) {
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px 0;
+    clear: both;
+    display: block;
+    float: none;
+
+
+}
+
+#acceptPrivacyAndTerms {
+    float: left;
+    position: relative;
+    margin-right: 2px;
+    bottom: -1px;
+
+}
+
+#acceptPrivacyAndTerms input {
+    margin: 0;
+    position: relative;
+    bottom: 0px;
+
+}
+
+#termsLink,
+#privacyLink {
+    font-weight: 600;
+}
+
+#msg_register {
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 479px) {
+    .emailText {
+
+        font-size: 20px;
+        padding: 6px 0;
+    }
+
+    .headline_top {
+        font-size: 18px;
+
+    }
+
+    .list_box {
+        line-height: 22px;
+        font-size: 17px;
+        padding-left: 10px;
+        width: calc(100% - 10px);
+    }
+
+    #reg_email {
+
+        width: 95%;
+        font-size: 14px;
+    }
+
+
+
+}
+
+/* end reg1 css */
+
+
+
